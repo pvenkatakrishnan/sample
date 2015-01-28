@@ -22,7 +22,7 @@
                 ]
             }
         }
-    },
+    }
 
-    "middleware": "import:./midware.json"
+   // "middleware": "import:./midware-dev.json"
 }

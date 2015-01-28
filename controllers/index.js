@@ -11,8 +11,7 @@ module.exports = function (router) {
 
     router.get('/', function (req, res, next) {
         
-        next(new Error('ohnooos'));
-        //res.render('index', model);
+        res.render('index', model);
         
         
     });
