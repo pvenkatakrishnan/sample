@@ -1,0 +1,37 @@
+ {
+
+    "devtools": {
+        "enabled": true,
+        "priority": 35,
+        "module": {
+            "name": "kraken-devtools",
+            "arguments": [
+                "path:./public",
+                "path:./.build",
+                {
+                    "template": {
+                        "module": "kraken-devtools/plugins/dustjs",
+                        "files": "/templates/**/*.js",
+                        "base": "templates",
+                        "i18n": "config:i18n"
+                    },
+                    "css": {
+                        "module": "kraken-devtools/plugins/less",
+                        "files": "/css/**/*.css"
+                    },
+                    "copier": {
+                        "module": "kraken-devtools/plugins/copier",
+                        "files": "**/*"
+                    }
+                }
+            ]
+        }
+    },
+    "serverError": {
+        "enabled": true,
+        "priority": 140,
+        "module": {
+            "name": "path:./lib/error/500"
+        }
+    }
+}
